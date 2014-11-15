@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.haipeng.cishicike.MainActivity" 
+    >
+    <LinearLayout 
+        android:id="@+id/main_ll_left"
+        android:layout_width="170dp"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        >
+    <ImageView 
+        android:layout_width="170dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/red"
+       />
+    <ImageView 
+        android:layout_width="170dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/material_blue_grey_800"
+       />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/main_ll_right"
+        android:layout_toRightOf="@+id/main_ll_left"
+        android:layout_width="170dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+    <ImageView 
+        android:layout_width="170dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/red"
+       />
+
+
+    <ImageView 
+        android:layout_width="170dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/yellow"
+       />
+</LinearLayout>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/material_blue_grey_800"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+    
+</RelativeLayout>
