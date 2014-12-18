@@ -2,7 +2,8 @@
 <resources>
     <color name="red">#FF0000</color>
     <color name="yellow">#FFFF00</color>
-    <color name="blue_light_one">#8EE5EE</color>
+    <color name="blue_light_one">#000080</color>
     <color name="green_light_one">#548B54</color>
-    
+    <color name="gold">#FFD700</color>
+ 
 </resources>

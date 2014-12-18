@@ -14,17 +14,19 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="@null"
             style="@style/style_main_btn"
             android:text="@string/string_main_interest"
-            android:textColor="@color/blue_light_one"
+            android:textColor="@color/green_light_one"
+            android:elevation="1dip"
+            
             />
         <Button 
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="@null"
-           
+            android:text="@string/string_main_plan"
+            style="@style/style_main_btn"
+            android:textColor="@color/blue_light_one"
             />
     </LinearLayout>
     <LinearLayout 
@@ -37,16 +39,18 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="@null"
              style="@style/style_main_btn"
             android:text="@string/string_main_party"
-            android:textColor="@color/green_light_one"
+            android:textColor="@color/red"
             />
         <Button 
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="@null"
+            android:elevation="1dip"
+            android:text="@string/string_main_friend"
+            style="@style/style_main_btn"
+            android:textColor="@color/gold"
             />
     </LinearLayout>
 </LinearLayout>

@@ -9,5 +9,6 @@
     <!-- main key words-->
     <string name="string_main_interest">兴趣</string>
     <string name="string_main_party">聚会</string>
-    
+    <string name="string_main_plan">谋划</string>
+    <string name="string_main_friend">朋友</string>
 </resources>

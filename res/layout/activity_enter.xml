@@ -12,7 +12,8 @@
         android:layout_weight="1"
         android:layout_height="match_parent"
         android:layout_gravity="left" 
-        android:orientation="horizontal"/>
+        android:orientation="horizontal"
+        />
 
     <LinearLayout
         android:id="@+id/right_linearLayout"
