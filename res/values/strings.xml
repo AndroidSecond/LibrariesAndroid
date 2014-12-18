@@ -6,4 +6,8 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_main">MainActivity</string>
 
+    <!-- main key words-->
+    <string name="string_main_interest">兴趣</string>
+    <string name="string_main_party">聚会</string>
+    
 </resources>

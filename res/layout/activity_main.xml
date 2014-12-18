@@ -1,57 +1,52 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.haipeng.cishicike.MainActivity" 
-    >
+    android:orientation="horizontal"
+    android:background="@drawable/main_bg" >
     <LinearLayout 
-        android:id="@+id/main_ll_left"
-        android:layout_width="170dp"
+        android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_margin="5dp"
+        android:layout_weight="1"
         android:orientation="vertical"
         >
-    <ImageView 
-        android:layout_width="170dp"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="@color/red"
-       />
-    <ImageView 
-        android:layout_width="170dp"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="@color/material_blue_grey_800"
-       />
+        <Button 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@null"
+            style="@style/style_main_btn"
+            android:text="@string/string_main_interest"
+            android:textColor="@color/blue_light_one"
+            />
+        <Button 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@null"
+           
+            />
     </LinearLayout>
-    
     <LinearLayout 
-        android:id="@+id/main_ll_right"
-        android:layout_toRightOf="@+id/main_ll_left"
-        android:layout_width="170dp"
+        android:layout_width="0dp"
         android:layout_height="match_parent"
+        android:layout_weight="1"
         android:orientation="vertical"
-        android:layout_margin="5dp">
-    <ImageView 
-        android:layout_width="170dp"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="@color/red"
-       />
-
-
-    <ImageView 
-        android:layout_width="170dp"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="@color/red"
-       />
+        >
+          <Button 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@null"
+             style="@style/style_main_btn"
+            android:text="@string/string_main_party"
+            android:textColor="@color/green_light_one"
+            />
+        <Button 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@null"
+            />
+    </LinearLayout>
 </LinearLayout>
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="@color/material_blue_grey_800"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
-    
-</RelativeLayout>
