@@ -18,6 +18,7 @@ public class DrawerAdapter extends BaseAdapter{
 		mList = list;
 		mContext = context;
 	}
+	
 	@Override
 	public int getCount() {
 		// TODO Auto-generated method stub

@@ -11,7 +11,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
-     <LinearLayout 
+     <Button 
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            style="@style/style_main_btn"
+            android:text="@string/string_main_interest"
+            android:textColor="@color/green_light_one"
+            android:elevation="1dip"
+            />
+    <!--  <LinearLayout 
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
@@ -59,15 +67,18 @@
             style="@style/style_main_btn"
             android:textColor="@color/gold"
             />
-    </LinearLayout>
+    </LinearLayout> -->
 </FrameLayout>
 <ListView
     android:id="@+id/toggle_listView"
-    android:layout_width="240dp"
-    android:layout_height="match_parent"
-    android:layout_gravity="start"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:background="@color/red"
     >
-    
 </ListView>
 
 </android.support.v4.widget.DrawerLayout>
