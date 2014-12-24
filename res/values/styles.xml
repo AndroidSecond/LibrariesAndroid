@@ -12,6 +12,18 @@
         -->
     </style>
 
+     <style name="WiFiDrBaseTheme" parent="@style/Theme.AppCompat.Light">
+
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+
+
+        -->
+        <item name="android:windowBackground">@color/background</item>
+    </style>
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
@@ -20,5 +32,29 @@
     <!-- main -->
     <style name="style_main_btn">
         <item name="android:textSize">@dimen/dimen_main_btn_text_size</item>
+    </style>
+    <style name="ActionBar.Solid.White" parent="@style/Widget.AppCompat.ActionBar.Solid">
+        <item name="android:background">@color/actbar_background</item>
+        <item name="android:titleTextStyle">@style/ActionBarTitle</item>
+        <item name="android:height">@dimen/actionbar_height</item>
+
+        <!-- Support library compatibility -->
+        <item name="background">@color/actbar_background</item>
+        <item name="titleTextStyle">@style/ActionBarTitle</item>
+        <item name="height">@dimen/actionbar_height</item>
+        
+         
+    </style>
+    <style name="WiFiDrTheme" parent="WiFiDrBaseTheme">
+        <item name="actionBarStyle">@style/ActionBar.Solid.White</item>
+        <item name="android:windowBackground">@color/background</item>
+        <!-- android3.0 and higher -->
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.White</item>
+        <item name="android:homeAsUpIndicator">@null</item> 
+    </style>
+    <style name="ActionBarTitle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/actbar_text</item>
+        <item name="android:textSize">@dimen/actionbar_title_textSize</item>
+        <item name="android:paddingLeft">@dimen/actionbar_title_paddingLeft</item>
     </style>
 </resources>

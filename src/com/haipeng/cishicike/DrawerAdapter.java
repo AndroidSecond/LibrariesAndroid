@@ -10,19 +10,20 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-public class DrawerAdapter extends BaseAdapter{
+public class DrawerAdapter extends BaseAdapter {
 
 	Context mContext;
 	List<String> mList = new ArrayList<String>();
-	public DrawerAdapter(Context context,List<String> list){
+
+	public DrawerAdapter(Context context, List<String> list) {
 		mList = list;
 		mContext = context;
 	}
-	
+
 	@Override
 	public int getCount() {
 		// TODO Auto-generated method stub
-		return mList.size();
+		return mList.size() + 1;
 	}
 
 	@Override
@@ -40,22 +41,29 @@ public class DrawerAdapter extends BaseAdapter{
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
 		// TODO Auto-generated method stub
-		ViewHolder viewHolder = null;
-		if(convertView == null)
-		{
-			convertView = LayoutInflater.from(mContext).inflate(R.layout.item_drawer, null);
-			viewHolder = new ViewHolder();
-			viewHolder.mTV = (TextView) convertView.findViewById(R.id.drawer_text);
-			convertView.setTag(viewHolder);
-			
-		}else{
-			viewHolder = (ViewHolder) convertView.getTag();
+		
+		if (position == 0) {
+			convertView = LayoutInflater.from(mContext).inflate(
+					R.layout.my_resource, null);
+		} else {
+			ViewHolder viewHolder = null;
+			if (convertView == null) {
+				convertView = LayoutInflater.from(mContext).inflate(
+						R.layout.item_drawer, null);
+				viewHolder = new ViewHolder();
+				viewHolder.mTV = (TextView) convertView
+						.findViewById(R.id.drawer_text);
+				convertView.setTag(viewHolder);
+
+			} else {
+				viewHolder = (ViewHolder) convertView.getTag();
+			}
+			viewHolder.mTV.setText(mList.get(position - 1));
 		}
-		viewHolder.mTV.setText(mList.get(position));
 		return convertView;
 	}
-	
-	public class ViewHolder{
+
+	public class ViewHolder {
 		TextView mTV;
 	}
 

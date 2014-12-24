@@ -6,12 +6,14 @@
 
     <uses-sdk
         android:minSdkVersion="8"
-        android:targetSdkVersion="20" />
+        android:targetSdkVersion="19" />
 
     <application
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/Theme.AppCompat.Light"
+        android:logo="@drawable/ic_wfa"
+        android:theme="@style/WiFiDrTheme"
+        android:configChanges="orientation|keyboardHidden|screenSize"
          >
         <activity
             android:name="com.haipeng.cishicike.EnterActivity"
