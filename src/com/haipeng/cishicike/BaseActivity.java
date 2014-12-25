@@ -122,12 +122,3 @@ public class BaseActivity extends ActionBarActivity {
 	}
 }
 
-// View view =
-// LayoutInflater.from(MainActivity.this).inflate(R.layout.customer_main,
-// new LinearLayout(this),false);
-// actionBar.setCustomView(view);
-
-// Drawable drawable
-// =getResources().getDrawable(R.drawable.main_background);
-// actionBar.setBackgroundDrawable(drawable);
-// actionBar.setDisplayShowCustomEnabled(true);
